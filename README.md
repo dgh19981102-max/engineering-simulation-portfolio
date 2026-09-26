@@ -30,7 +30,10 @@ entirely and makes the constraint unsatisfiable for any shifted gear pair. Const
 violation is ranked ahead of non-dominated sorting so infeasible individuals never
 survive into the reported front.
 
-Population 200, 800 generations, SBX crossover and polynomial mutation.
+Population 200, 800 generations, SBX crossover and polynomial mutation. The paper's
+baseline design is feasible under this model and is not dominated by the front: its
+bending-stress gap (55.9 MPa) is smaller than any front point, at a higher contact
+stress (351.0 MPa vs. 339.7 MPa for design C).
 
 ---
 
@@ -66,12 +69,12 @@ Four algorithms run on identical data and iteration budget:
 
 | Algorithm | Final tour length | vs. greedy |
 |---|---|---|
-| Hybrid metaheuristic | 5469.6 | −1.80% |
-| Tabu Search | 5471.8 | −1.76% |
-| Ant Colony Optimisation | 5502.4 | −1.21% |
-| Greedy (baseline) | 5570.0 | — |
+| Hybrid metaheuristic | 5367.7 | −1.66% |
+| Tabu Search | 5368.3 | −1.65% |
+| Ant Colony Optimisation | 5396.4 | −1.14% |
+| Greedy (baseline) | 5458.4 | — |
 
-The hybrid and tabu results are within 0.04% of each other — on this instance the
+The hybrid and tabu results are within 0.01% of each other — on this instance the
 two are effectively tied, and the honest reading is that tabu search reaches the
 same quality with a simpler implementation.
 

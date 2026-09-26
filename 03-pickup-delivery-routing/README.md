@@ -19,14 +19,14 @@ replace with your own data.
 
 | Algorithm | Final tour length | vs. greedy |
 |---|---|---|
-| Hybrid metaheuristic | 5469.6 | −1.80% |
-| Tabu Search | 5471.8 | −1.76% |
-| Ant Colony Optimisation | 5502.4 | −1.21% |
-| Greedy (baseline) | 5570.0 | — |
+| Hybrid metaheuristic | 5367.7 | −1.66% |
+| Tabu Search | 5368.3 | −1.65% |
+| Ant Colony Optimisation | 5396.4 | −1.14% |
+| Greedy (baseline) | 5458.4 | — |
 
 All four run on the same instance and the same iteration budget (100), so the numbers
-are directly comparable. The hybrid and tabu results differ by 0.04%, which is well
-inside run-to-run noise — on this instance they are tied, and tabu search gets there
+are directly comparable. Values are from MATLAB R2023a with the script's `rng(6)`.
+The hybrid and tabu results differ by 0.01%, which is well inside run-to-run noise — on this instance they are tied, and tabu search gets there
 with a simpler implementation.
 
 ## Swapping in your own data

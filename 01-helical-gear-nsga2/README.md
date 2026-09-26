@@ -49,5 +49,10 @@ against the helix-angle bound.
 ## Output
 
 The feasible non-dominated set (at most the population size, 200) plus three labelled
-representatives: minimum bending-stress
-gap (A), balanced trade-off (B) and minimum contact stress (C).
+representatives: minimum bending-stress gap (A), balanced trade-off (B) and minimum
+contact stress (C).
+
+The script sets no random seed, so the front varies slightly between runs. The figure
+in the top-level README comes from `rng(1)` on MATLAB R2023a: 200 solutions (185
+distinct), f₁ 339.7–349.3 MPa, f₂ 57.6–68.7 MPa. The paper's baseline design
+(f₁ = 351.0 MPa, f₂ = 55.9 MPa) is feasible and is not dominated by that front.
